@@ -1,0 +1,269 @@
+<!--activity_about start-->
+<string name="about_activity_you_are_in_staging_mode">You are in staging mode.</string>
+<string name="about_activity_powered_by
+">Powered by:"/>
+</string>
+<!--activity_about end-->
+
+<!--activity_call start-->
+<!--activity_call end-->
+
+<!--activity_chat start-->
+<string name="chat_activity_welcome">Welcome</string>
+<string name="chat_activity_let’s_write_message_to_start_conversation">Let’s write message to start conversation</string>
+<string name="chat_activity_new_message">New Message</string>
+<string name="chat_activity_archived_message">Archived message:</string>
+<string name="chat_activity_you_are_only_able_to_see_message">You are only able to see message</string>
+<!--activity_chat end-->
+
+<!--activity_chat_media start-->
+<!--activity_chat_media end-->
+
+<!--activity_choose_city start-->
+<string name="choose_city_activity_your_location">Your Location</string>
+<string name="choose_city_activity_choose_your_location">Choose your location</string>
+<!--activity_choose_city end-->
+
+<!--activity_choose_specialties start-->
+<string name="choose_specialties_activity_your_specialties">Your Specialties</string>
+<string name="choose_specialties_activity_reset">RESET</string>
+<string name="choose_specialties_activity_choose_your_specialties">Choose Your Specialties</string>
+<!--activity_choose_specialties end-->
+
+<!--activity_consultation start-->
+<!--activity_consultation end-->
+
+<!--activity_detail_transaction start-->
+<string name="detail_transaction_activity_detail_transaction">Detail Transaction</string>
+<string name="detail_transaction_activity_report">Report</string>
+<string name="detail_transaction_activity_if_you_found_this_transaction_is_suspicious_you_can_contact_admin_and_report_it_by_clicking_button_report">If you found this transaction is suspicious, you can contact admin and report it by clicking button report</string>
+<!--activity_detail_transaction end-->
+
+<!--activity_edit_profile start-->
+<string name="edit_profile_activity_edit_profile">Edit Profile</string>
+<string name="edit_profile_activity_specialties">Specialties</string>
+<string name="edit_profile_activity_specialties">Specialties</string>
+<string name="edit_profile_activity_location">Location</string>
+<string name="edit_profile_activity_location">Location</string>
+<string name="edit_profile_activity_date_of_birth">Date Of Birth</string>
+<string name="edit_profile_activity_date">Date</string>
+<string name="edit_profile_activity_gender">Gender</string>
+<string name="edit_profile_activity_male">Male</string>
+<string name="edit_profile_activity_female">Female</string>
+<string name="edit_profile_activity_save">save</string>
+<!--activity_edit_profile end-->
+
+<!--activity_forget_password start-->
+<string name="forget_password_activity_forget_password">Forget Password</string>
+<string name="forget_password_activity_did_you_forget_your_password">Did you forget your password?</string>
+<string name="forget_password_activity_dont_worry_we_will_send_respond_to_your_email">Don't worry we will send respond to your email</string>
+<string name="forget_password_activity_send">Send</string>
+<!--activity_forget_password end-->
+
+<!--activity_login start-->
+<string name="login_activity_qonsultant">Qonsultant</string>
+<string name="login_activity_staging">Staging</string>
+<string name="login_activity_forgot_password">Forgot Password?</string>
+<string name="login_activity_login">login</string>
+<string name="login_activity_didnt_have_account">Didn't Have Account?</string>
+<!--activity_login end-->
+
+<!--activity_my_profile start-->
+<string name="my_profile_activity_status">Status</string>
+<string name="my_profile_activity_edit_profile">Edit Profile</string>
+<string name="my_profile_activity_name">Name</string>
+<string name="my_profile_activity_email">Email</string>
+<string name="my_profile_activity_age">Age</string>
+<string name="my_profile_activity_gender">Gender</string>
+<string name="my_profile_activity_specialties">Specialties</string>
+<string name="my_profile_activity_location">Location</string>
+<string name="my_profile_activity_rate">Rate</string>
+<string name="my_profile_activity_password">Password</string>
+<string name="my_profile_activity_edit_password">Edit Password</string>
+<!--activity_my_profile end-->
+
+<!--activity_setting_account_information start-->
+<string name="setting_account_information_activity_account_information">Account Information</string>
+<string name="setting_account_information_activity_account_balance">Account Balance</string>
+<string name="setting_account_information_activity_withdraw_balance">Withdraw Balance</string>
+<string name="setting_account_information_activity_transaction_history">Transaction History</string>
+<!--activity_setting_account_information end-->
+
+<!--activity_setting_general start-->
+<string name="setting_general_activity_general_setting">General Setting</string>
+<string name="setting_general_activity_about">About</string>
+<string name="setting_general_activity_logout">Logout</string>
+<!--activity_setting_general end-->
+
+<!--activity_sign_up start-->
+<string name="sign_up_activity_get_account">Get Account</string>
+<string name="sign_up_activity_specialties">Specialties</string>
+<string name="sign_up_activity_specialties">Specialties</string>
+<string name="sign_up_activity_location">Location</string>
+<string name="sign_up_activity_location">Location</string>
+<string name="sign_up_activity_date_of_birth">Date Of Birth</string>
+<string name="sign_up_activity_date">Date</string>
+<string name="sign_up_activity_gender">Gender</string>
+<string name="sign_up_activity_male">Male</string>
+<string name="sign_up_activity_female">Female</string>
+<string name="sign_up_activity_sign_up">Sign Up</string>
+<!--activity_sign_up end-->
+
+<!--activity_splash start-->
+<string name="splash_activity_powered_by
+">Powered by:"/>
+</string>
+<!--activity_splash end-->
+
+<!--activity_transaction start-->
+<string name="transaction_activity_empty_transaction_history">Empty Transaction History</string>
+<string name="transaction_activity_you_have_not_done_any_transaction_yet_further_transaction_will_be_listed_here">You have not done any transaction yet, further transaction will be listed here</string>
+<string name="transaction_activity_transaction">Transaction</string>
+<!--activity_transaction end-->
+
+<!--activity_verification_account start-->
+<string name="verification_account_activity_verification">Verification</string>
+<string name="verification_account_activity_insert_verification_code">Insert Verification Code</string>
+<string name="verification_account_activity_weve_sent_the_verification_code_to_your_registered_phone_number_please_kindly_check_it">We've sent the verification code to your registered phone number. Please kindly check it.</string>
+<string name="verification_account_activity_submit">Submit</string>
+<string name="verification_account_activity_send_again">Send Again</string>
+<!--activity_verification_account end-->
+
+<!--dialog_call_summary start-->
+<string name="call_summary_dialog_earning">Earning</string>
+<string name="call_summary_dialog_you_may_check_the_transaction_details_in_your_transaction_history">You may check the transaction details in your transaction history</string>
+<string name="call_summary_dialog_call_duration">Call Duration:</string>
+<string name="call_summary_dialog_calculating…">Calculating…</string>
+<string name="call_summary_dialog_total_earning">Total Earning:</string>
+<string name="call_summary_dialog_calculating…">Calculating…</string>
+<string name="call_summary_dialog_current_balance">Current Balance:</string>
+<string name="call_summary_dialog_calculating…">Calculating…</string>
+<string name="call_summary_dialog_ok">OK</string>
+<!--dialog_call_summary end-->
+
+<!--dialog_edit_password start-->
+<string name="edit_password_dialog_edit_password">Edit Password</string>
+<string name="edit_password_dialog_submit">Submit</string>
+<!--dialog_edit_password end-->
+
+<!--dialog_report_transaction start-->
+<string name="report_transaction_dialog_what_happened">What Happened?</string>
+<string name="report_transaction_dialog_submit">Submit</string>
+<!--dialog_report_transaction end-->
+
+<!--dialog_simple start-->
+<!--dialog_simple end-->
+
+<!--fragment_callback start-->
+<string name="callback_fragment_callback">Callback</string>
+<string name="callback_fragment_under_construction">Under Construction</string>
+<!--fragment_callback end-->
+
+<!--fragment_consulation_missed start-->
+<string name="consulation_missed_fragment_empty_missed_consultation">Empty Missed Consultation</string>
+<string name="consulation_missed_fragment_you_dont_have_any_missed_consultation">You don't have any missed consultation</string>
+<!--fragment_consulation_missed end-->
+
+<!--fragment_consulation_recent start-->
+<string name="consulation_recent_fragment_empty_recent_consultation">Empty Recent Consultation</string>
+<string name="consulation_recent_fragment_you_dont_have_any_recent_consultation">You don't have any recent consultation</string>
+<!--fragment_consulation_recent end-->
+
+<!--fragment_consultation start-->
+<string name="consultation_fragment_your_consultations">Your Consultations</string>
+<string name="consultation_fragment_staging">Staging</string>
+<!--fragment_consultation end-->
+
+<!--fragment_evaluate_call start-->
+<string name="evaluate_call_fragment_evaluate_call">Evaluate Call</string>
+<string name="evaluate_call_fragment_evaluate_call">Evaluate Call</string>
+<string name="evaluate_call_fragment_please_tell_us_how_satisfied_you_are_with_the_call">Please tell us how satisfied you are with the call</string>
+<string name="evaluate_call_fragment_submit_rate">Submit Rate</string>
+<!--fragment_evaluate_call end-->
+
+<!--fragment_home start-->
+<string name="home_fragment_home">Home</string>
+<string name="home_fragment_under_construction">Under Construction</string>
+<!--fragment_home end-->
+
+<!--fragment_setting start-->
+<string name="setting_fragment_setting">Setting</string>
+<string name="setting_fragment_status">Status</string>
+<string name="setting_fragment_rate_per_minute">Rate Per Minute</string>
+<string name="setting_fragment_rate_per_minute">Rate Per Minute</string>
+<string name="setting_fragment_save">save</string>
+<string name="setting_fragment_my_profile">My Profile</string>
+<string name="setting_fragment_consultation_setting">Consultation Setting</string>
+<string name="setting_fragment_account_information">Account Information</string>
+<string name="setting_fragment_security_matters">Security Matters</string>
+<string name="setting_fragment_general_setting">General Setting</string>
+<!--fragment_setting end-->
+
+<!--fragment_video_call start-->
+<!--fragment_video_call end-->
+
+<!--fragment_video_calling start-->
+<string name="video_calling_fragment_earning">Earning</string>
+<string name="video_calling_fragment_0000">00:00</string>
+<string name="video_calling_fragment_incoming_calling">Incoming Calling</string>
+<!--fragment_video_calling end-->
+
+<!--fragment_voice_call start-->
+<string name="voice_call_fragment_earning">Earning</string>
+<!--fragment_voice_call end-->
+
+<!--fragment_voice_calling start-->
+<string name="voice_calling_fragment_incoming_calling">Incoming Calling</string>
+<!--fragment_voice_calling end-->
+
+<!--item_chat_file start-->
+<!--item_chat_file end-->
+
+<!--item_chat_file_me start-->
+<!--item_chat_file_me end-->
+
+<!--item_chat_img start-->
+<!--item_chat_img end-->
+
+<!--item_chat_img_me start-->
+<!--item_chat_img_me end-->
+
+<!--item_chat_media start-->
+<!--item_chat_media end-->
+
+<!--item_chat_text start-->
+<!--item_chat_text end-->
+
+<!--item_chat_text_me start-->
+<!--item_chat_text_me end-->
+
+<!--item_consultation_log start-->
+<!--item_consultation_log end-->
+
+<!--item_location start-->
+<!--item_location end-->
+
+<!--item_specialty start-->
+<!--item_specialty end-->
+
+<!--item_transaction start-->
+<!--item_transaction end-->
+
+<!--layout_search start-->
+<!--layout_search end-->
+
+<!--layout_transaction_summary start-->
+<string name="transaction_summary_layout_total_earning">Total Earning</string>
+<string name="transaction_summary_layout_">:</string>
+<string name="transaction_summary_layout_">-</string>
+<string name="transaction_summary_layout_current_balance">Current Balance</string>
+<string name="transaction_summary_layout_">:</string>
+<string name="transaction_summary_layout_">-</string>
+<string name="transaction_summary_layout_last_withdrawal">Last Withdrawal</string>
+<string name="transaction_summary_layout_">:</string>
+<string name="transaction_summary_layout_">-</string>
+<!--layout_transaction_summary end-->
+
+<!--view_form start-->
+<!--view_form end-->
+

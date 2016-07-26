@@ -3,8 +3,8 @@ import os
 import re
 from settings import ROOT_PATH, JAVA_PROJECT_PATH
 
-RES_PATH = '/app/src/main/res'
 JAVA_UI_PATH = '/ui'
+RES_PATH = '/app/src/main/res'
 STRINGS_PATH = '/values/strings.xml'
 
 full_java_ui_path = ROOT_PATH + JAVA_PROJECT_PATH + JAVA_UI_PATH

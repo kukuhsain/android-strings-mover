@@ -4,7 +4,8 @@ import re
 from settings import ROOT_PATH
 
 RES_PATH = '/app/src/main/res'
-LAYOUT_PATH = '/layout'
+# LAYOUT_PATH = '/layout'
+LAYOUT_PATH = ''
 STRINGS_PATH = '/values/strings.xml'
 
 full_layout_path = ROOT_PATH + RES_PATH + LAYOUT_PATH
@@ -67,78 +68,60 @@ with open(full_strings_path, 'r') as f:
 #         f.writelines(line)
 
 
+def realstrings_to_stringsres(line, filter_result, dict_stringsres):
+    for key, value in dict_stringsres.iteritems():
+        # print key
+        # print value
+        if value==filter_result:
+            string_before = '"' + value + '"'
+            string_after = '"@string/' + key + '"'
+            line = line.replace(string_before, string_after)
+            
+    return line
+
 for root, dirs, files in os.walk(full_layout_path):
     for single_file in sorted(files):
         fullpath = os.path.join(root, single_file)
         # print(fullpath)
         file_name = single_file.replace('.xml', '')
 
-        tag = file_name.split('_', 1)[0]
-        filtered_file_name = file_name.split('_', 1)[1]
-        filename_result = filtered_file_name + '_' + tag
-        # filename_result = snakecase_to_camelcase(filename_result)
+        if "layout" in root or "menu" in root:
+            tag = file_name.split('_', 1)[0]
+            filtered_file_name = file_name.split('_', 1)[1]
+            filename_result = filtered_file_name + '_' + tag
+            # filename_result = snakecase_to_camelcase(filename_result)
 
-        try:
-            if result[filename_result]:
-                # print result[filename_result]
-                temp_file = []
-                with open(fullpath, 'r') as f:
-                    for line in f.readlines():                        
-                        filter_result = re.findall('text="(.*)"', line)
+            try:
+                if result[filename_result]:
+                    # print result[filename_result]
+                    temp_file = []
+                    with open(fullpath, 'r') as f:
+                        for line in f.readlines():                        
+                            filter_result = re.findall('text="(.*)"', line)
 
-                        if filter_result:
-                            # print filter_result
-                            # filter_result = filter_result.replace('', '')
-                            # if filter_result in result[file_name]:
-                                # print True
-                            filter_result = filter_result[0]
+                            if "android:text=" in line:
+                                filter_result = re.findall('text="(.*)"', line)[0]
+                                line = realstrings_to_stringsres(line, filter_result, result[filename_result])
 
-                            for key, value in result[filename_result].iteritems():
-                                # print key
-                                # print value
-                                if value==filter_result:
-                                    
-                                    string_before = '"' + value + '"'
-                                    string_after = '"@string/' + key + '"'
-                                    line = line.replace(string_before, string_after)
-                                    print line
-                        
-                        temp_file.append(line)
-                
-                with open(fullpath, 'w+') as f:
-                    for line in temp_file:
-                        f.writelines(line)        
-            else:
-                print False
+                            elif "android:hint" in line:
+                                filter_result = re.findall('hint="(.*)"', line)[0]
+                                line = realstrings_to_stringsres(line, filter_result, result[filename_result])
+                            
+                            elif "android:digits" in line:
+                                filter_result = re.findall('digits="(.*)"', line)[0]
+                                line = realstrings_to_stringsres(line, filter_result, result[filename_result])
 
-        except KeyError, e:
-            print e
+                            elif "android:title" in line:
+                                filter_result = re.findall('title="(.*)"', line)[0]
+                                line = realstrings_to_stringsres(line, filter_result, result[filename_result])
+                            
+                            temp_file.append(line)
+                    
+                    with open(fullpath, 'w+') as f:
+                        for line in temp_file:
+                            f.writelines(line)        
+                else:
+                    print False
 
-        # if result[file_name]:
-        #     temp_file = []
-        #     with open(fullpath, 'r') as f:
-        #         for line in f.readlines():
-        #             if '"' in line:
-        #                 filter_result = re.findall('"(.*)"', line)[0]
-        #                 # filter_result = filter_result.replace('', '')
-        #                 # if filter_result in result[file_name]:
-        #                     # print True
-
-        #                 for key, value in result[file_name].iteritems():
-        #                     # print key
-        #                     # print value
-        #                     if value in line:
-        #                         string_before = '"' + value + '"'
-        #                         string_after = 'AndroidUtilities.getString(R.string.' + key + ')'
-        #                         line = line.replace(string_before, string_after)
-
-        #                 print line
-
-        #             temp_file.append(line)
-
-        #     # with open(fullpath, 'w+') as f:
-        #     #     for line in temp_file:
-        #     #         f.writelines(line)
-
-        # else:          
-        #     print False
+            except KeyError, e:
+                print e

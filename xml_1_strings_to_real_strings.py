@@ -74,36 +74,37 @@ for root, dirs, files in os.walk(full_layout_path):
         # print("<!--"+file_name+" start-->")
 
         temp_file = []
-        with open(fullpath, 'r') as f:
-            for line in f.readlines():
-                # print line
-                if "android:text=" in line:
-                    filter_result = re.findall('text="(.*)"', line)[0]
-                    line = stringres_to_realstring(line, filter_result)
+        if "layout" in root or "menu" in root:
+            with open(fullpath, 'r') as f:
+                for line in f.readlines():
                     # print line
+                    if "android:text=" in line:
+                        filter_result = re.findall('text="(.*)"', line)[0]
+                        line = stringres_to_realstring(line, filter_result)
+                        # print line
 
-                elif "android:hint=" in line:
-                    filter_result = re.findall('hint="(.*)"', line)[0]
-                    line = stringres_to_realstring(line, filter_result)
-                    # print line
+                    elif "android:hint=" in line:
+                        filter_result = re.findall('hint="(.*)"', line)[0]
+                        line = stringres_to_realstring(line, filter_result)
+                        # print line
 
-                elif "android:digits=" in line:
-                    filter_result = re.findall('digits="(.*)"', line)[0]
-                    line = stringres_to_realstring(line, filter_result)
-                    # print line
+                    elif "android:digits=" in line:
+                        filter_result = re.findall('digits="(.*)"', line)[0]
+                        line = stringres_to_realstring(line, filter_result)
+                        # print line
 
-                elif "android:title=" in line:
-                    filter_result = re.findall('title="(.*)"', line)[0]
-                    line = stringres_to_realstring(line, filter_result)
-                    # print line
+                    elif "android:title=" in line:
+                        filter_result = re.findall('title="(.*)"', line)[0]
+                        line = stringres_to_realstring(line, filter_result)
+                        # print line
 
-                # print line
-                temp_file.append(line)
-                # print temp_file
+                    print line
+                    temp_file.append(line)
+                    # print temp_file
         
-        with open(fullpath, 'w+') as f:
-            for line in temp_file:
-                f.writelines(line)
+            with open(fullpath, 'w+') as f:
+                for line in temp_file:
+                    f.writelines(line)
 
 
         # print("<!--"+file_name+" end-->")

@@ -1,269 +1,198 @@
-<!--activity_about start-->
-<string name="about_activity_you_are_in_staging_mode">You are in staging mode.</string>
-<string name="about_activity_powered_by
-">Powered by:"/>
-</string>
-<!--activity_about end-->
+<!--consultation_bottombar start-->
+<string name="consultation_bottombar_consultation">Consultation</string>
+<string name="consultation_bottombar_callback">Callback</string>
+<string name="consultation_bottombar_setting">Setting</string>
+<!--consultation_bottombar end-->
 
-<!--activity_call start-->
-<!--activity_call end-->
+<!--menu_buttombar start-->
+<string name="menu_buttombar_consultation">Consultation</string>
+<string name="menu_buttombar_callback">Callback</string>
+<string name="menu_buttombar_setting">Setting</string>
+<!--menu_buttombar end-->
 
-<!--activity_chat start-->
-<string name="chat_activity_welcome">Welcome</string>
-<string name="chat_activity_let’s_write_message_to_start_conversation">Let’s write message to start conversation</string>
-<string name="chat_activity_new_message">New Message</string>
-<string name="chat_activity_archived_message">Archived message:</string>
-<string name="chat_activity_you_are_only_able_to_see_message">You are only able to see message</string>
-<!--activity_chat end-->
+<!--video_call_fragment start-->
+<!--video_call_fragment end-->
 
-<!--activity_chat_media start-->
-<!--activity_chat_media end-->
-
-<!--activity_choose_city start-->
-<string name="choose_city_activity_your_location">Your Location</string>
-<string name="choose_city_activity_choose_your_location">Choose your location</string>
-<!--activity_choose_city end-->
-
-<!--activity_choose_specialties start-->
-<string name="choose_specialties_activity_your_specialties">Your Specialties</string>
-<string name="choose_specialties_activity_reset">RESET</string>
-<string name="choose_specialties_activity_choose_your_specialties">Choose Your Specialties</string>
-<!--activity_choose_specialties end-->
-
-<!--activity_consultation start-->
-<!--activity_consultation end-->
-
-<!--activity_detail_transaction start-->
-<string name="detail_transaction_activity_detail_transaction">Detail Transaction</string>
-<string name="detail_transaction_activity_report">Report</string>
-<string name="detail_transaction_activity_if_you_found_this_transaction_is_suspicious_you_can_contact_admin_and_report_it_by_clicking_button_report">If you found this transaction is suspicious, you can contact admin and report it by clicking button report</string>
-<!--activity_detail_transaction end-->
-
-<!--activity_edit_profile start-->
-<string name="edit_profile_activity_edit_profile">Edit Profile</string>
-<string name="edit_profile_activity_specialties">Specialties</string>
-<string name="edit_profile_activity_specialties">Specialties</string>
-<string name="edit_profile_activity_location">Location</string>
-<string name="edit_profile_activity_location">Location</string>
-<string name="edit_profile_activity_date_of_birth">Date Of Birth</string>
-<string name="edit_profile_activity_date">Date</string>
-<string name="edit_profile_activity_gender">Gender</string>
-<string name="edit_profile_activity_male">Male</string>
-<string name="edit_profile_activity_female">Female</string>
-<string name="edit_profile_activity_save">save</string>
-<!--activity_edit_profile end-->
-
-<!--activity_forget_password start-->
-<string name="forget_password_activity_forget_password">Forget Password</string>
-<string name="forget_password_activity_did_you_forget_your_password">Did you forget your password?</string>
-<string name="forget_password_activity_dont_worry_we_will_send_respond_to_your_email">Don't worry we will send respond to your email</string>
-<string name="forget_password_activity_send">Send</string>
-<!--activity_forget_password end-->
-
-<!--activity_login start-->
-<string name="login_activity_qonsultant">Qonsultant</string>
-<string name="login_activity_staging">Staging</string>
-<string name="login_activity_forgot_password">Forgot Password?</string>
-<string name="login_activity_login">login</string>
-<string name="login_activity_didnt_have_account">Didn't Have Account?</string>
-<!--activity_login end-->
-
-<!--activity_my_profile start-->
-<string name="my_profile_activity_status">Status</string>
-<string name="my_profile_activity_edit_profile">Edit Profile</string>
-<string name="my_profile_activity_name">Name</string>
-<string name="my_profile_activity_email">Email</string>
-<string name="my_profile_activity_age">Age</string>
-<string name="my_profile_activity_gender">Gender</string>
-<string name="my_profile_activity_specialties">Specialties</string>
-<string name="my_profile_activity_location">Location</string>
-<string name="my_profile_activity_rate">Rate</string>
-<string name="my_profile_activity_password">Password</string>
-<string name="my_profile_activity_edit_password">Edit Password</string>
-<!--activity_my_profile end-->
-
-<!--activity_setting_account_information start-->
-<string name="setting_account_information_activity_account_information">Account Information</string>
-<string name="setting_account_information_activity_account_balance">Account Balance</string>
-<string name="setting_account_information_activity_withdraw_balance">Withdraw Balance</string>
-<string name="setting_account_information_activity_transaction_history">Transaction History</string>
-<!--activity_setting_account_information end-->
-
-<!--activity_setting_general start-->
-<string name="setting_general_activity_general_setting">General Setting</string>
-<string name="setting_general_activity_about">About</string>
-<string name="setting_general_activity_logout">Logout</string>
-<!--activity_setting_general end-->
-
-<!--activity_sign_up start-->
-<string name="sign_up_activity_get_account">Get Account</string>
-<string name="sign_up_activity_specialties">Specialties</string>
-<string name="sign_up_activity_specialties">Specialties</string>
-<string name="sign_up_activity_location">Location</string>
-<string name="sign_up_activity_location">Location</string>
-<string name="sign_up_activity_date_of_birth">Date Of Birth</string>
-<string name="sign_up_activity_date">Date</string>
-<string name="sign_up_activity_gender">Gender</string>
-<string name="sign_up_activity_male">Male</string>
-<string name="sign_up_activity_female">Female</string>
-<string name="sign_up_activity_sign_up">Sign Up</string>
-<!--activity_sign_up end-->
-
-<!--activity_splash start-->
-<string name="splash_activity_powered_by
-">Powered by:"/>
-</string>
-<!--activity_splash end-->
-
-<!--activity_transaction start-->
-<string name="transaction_activity_empty_transaction_history">Empty Transaction History</string>
-<string name="transaction_activity_you_have_not_done_any_transaction_yet_further_transaction_will_be_listed_here">You have not done any transaction yet, further transaction will be listed here</string>
-<string name="transaction_activity_transaction">Transaction</string>
-<!--activity_transaction end-->
-
-<!--activity_verification_account start-->
-<string name="verification_account_activity_verification">Verification</string>
-<string name="verification_account_activity_insert_verification_code">Insert Verification Code</string>
-<string name="verification_account_activity_weve_sent_the_verification_code_to_your_registered_phone_number_please_kindly_check_it">We've sent the verification code to your registered phone number. Please kindly check it.</string>
-<string name="verification_account_activity_submit">Submit</string>
-<string name="verification_account_activity_send_again">Send Again</string>
-<!--activity_verification_account end-->
-
-<!--dialog_call_summary start-->
-<string name="call_summary_dialog_earning">Earning</string>
-<string name="call_summary_dialog_you_may_check_the_transaction_details_in_your_transaction_history">You may check the transaction details in your transaction history</string>
-<string name="call_summary_dialog_call_duration">Call Duration:</string>
-<string name="call_summary_dialog_calculating…">Calculating…</string>
-<string name="call_summary_dialog_total_earning">Total Earning:</string>
-<string name="call_summary_dialog_calculating…">Calculating…</string>
-<string name="call_summary_dialog_current_balance">Current Balance:</string>
-<string name="call_summary_dialog_calculating…">Calculating…</string>
-<string name="call_summary_dialog_ok">OK</string>
-<!--dialog_call_summary end-->
-
-<!--dialog_edit_password start-->
-<string name="edit_password_dialog_edit_password">Edit Password</string>
-<string name="edit_password_dialog_submit">Submit</string>
-<!--dialog_edit_password end-->
-
-<!--dialog_report_transaction start-->
-<string name="report_transaction_dialog_what_happened">What Happened?</string>
-<string name="report_transaction_dialog_submit">Submit</string>
-<!--dialog_report_transaction end-->
-
-<!--dialog_simple start-->
-<!--dialog_simple end-->
-
-<!--fragment_callback start-->
-<string name="callback_fragment_callback">Callback</string>
-<string name="callback_fragment_under_construction">Under Construction</string>
-<!--fragment_callback end-->
-
-<!--fragment_consulation_missed start-->
-<string name="consulation_missed_fragment_empty_missed_consultation">Empty Missed Consultation</string>
-<string name="consulation_missed_fragment_you_dont_have_any_missed_consultation">You don't have any missed consultation</string>
-<!--fragment_consulation_missed end-->
-
-<!--fragment_consulation_recent start-->
-<string name="consulation_recent_fragment_empty_recent_consultation">Empty Recent Consultation</string>
-<string name="consulation_recent_fragment_you_dont_have_any_recent_consultation">You don't have any recent consultation</string>
-<!--fragment_consulation_recent end-->
-
-<!--fragment_consultation start-->
-<string name="consultation_fragment_your_consultations">Your Consultations</string>
-<string name="consultation_fragment_staging">Staging</string>
-<!--fragment_consultation end-->
-
-<!--fragment_evaluate_call start-->
-<string name="evaluate_call_fragment_evaluate_call">Evaluate Call</string>
-<string name="evaluate_call_fragment_evaluate_call">Evaluate Call</string>
-<string name="evaluate_call_fragment_please_tell_us_how_satisfied_you_are_with_the_call">Please tell us how satisfied you are with the call</string>
-<string name="evaluate_call_fragment_submit_rate">Submit Rate</string>
-<!--fragment_evaluate_call end-->
-
-<!--fragment_home start-->
-<string name="home_fragment_home">Home</string>
-<string name="home_fragment_under_construction">Under Construction</string>
-<!--fragment_home end-->
-
-<!--fragment_setting start-->
-<string name="setting_fragment_setting">Setting</string>
-<string name="setting_fragment_status">Status</string>
-<string name="setting_fragment_rate_per_minute">Rate Per Minute</string>
-<string name="setting_fragment_rate_per_minute">Rate Per Minute</string>
-<string name="setting_fragment_save">save</string>
-<string name="setting_fragment_my_profile">My Profile</string>
-<string name="setting_fragment_consultation_setting">Consultation Setting</string>
-<string name="setting_fragment_account_information">Account Information</string>
-<string name="setting_fragment_security_matters">Security Matters</string>
-<string name="setting_fragment_general_setting">General Setting</string>
-<!--fragment_setting end-->
-
-<!--fragment_video_call start-->
-<!--fragment_video_call end-->
-
-<!--fragment_video_calling start-->
+<!--video_calling_fragment start-->
 <string name="video_calling_fragment_earning">Earning</string>
 <string name="video_calling_fragment_0000">00:00</string>
 <string name="video_calling_fragment_incoming_calling">Incoming Calling</string>
-<!--fragment_video_calling end-->
+<!--video_calling_fragment end-->
 
-<!--fragment_voice_call start-->
+<!--voice_call_fragment start-->
 <string name="voice_call_fragment_earning">Earning</string>
-<!--fragment_voice_call end-->
+<!--voice_call_fragment end-->
 
-<!--fragment_voice_calling start-->
+<!--voice_calling_fragment start-->
 <string name="voice_calling_fragment_incoming_calling">Incoming Calling</string>
-<!--fragment_voice_calling end-->
+<!--voice_calling_fragment end-->
 
-<!--item_chat_file start-->
-<!--item_chat_file end-->
+<!--about_activity start-->
+<!--about_activity end-->
 
-<!--item_chat_file_me start-->
-<!--item_chat_file_me end-->
+<!--call_activity start-->
+<!--call_activity end-->
 
-<!--item_chat_img start-->
-<!--item_chat_img end-->
+<!--chat_activity start-->
+<string name="chat_activity_type_a_message_here…">Type a message here…</string>
+<!--chat_activity end-->
 
-<!--item_chat_img_me start-->
-<!--item_chat_img_me end-->
+<!--chat_media_activity start-->
+<!--chat_media_activity end-->
 
-<!--item_chat_media start-->
-<!--item_chat_media end-->
+<!--choose_city_activity start-->
+<!--choose_city_activity end-->
 
-<!--item_chat_text start-->
-<!--item_chat_text end-->
+<!--choose_specialties_activity start-->
+<!--choose_specialties_activity end-->
 
-<!--item_chat_text_me start-->
-<!--item_chat_text_me end-->
+<!--consultation_activity start-->
+<!--consultation_activity end-->
 
-<!--item_consultation_log start-->
-<!--item_consultation_log end-->
+<!--detail_transaction_activity start-->
+<!--detail_transaction_activity end-->
 
-<!--item_location start-->
-<!--item_location end-->
+<!--edit_profile_activity start-->
+<string name="edit_profile_activity_qwertyuiopasdfghjklzxcvbnm_qwertyuiopasdfghjklzxcvbnm">QWERTYUIOPASDFGHJKLZXCVBNM qwertyuiopasdfghjklzxcvbnm,.'</string>
+<string name="edit_profile_activity_name">Name</string>
+<string name="edit_profile_activity_rate">Rate</string>
+<!--edit_profile_activity end-->
 
-<!--item_specialty start-->
-<!--item_specialty end-->
+<!--forget_password_activity start-->
+<string name="forget_password_activity_email">Email</string>
+<!--forget_password_activity end-->
 
-<!--item_transaction start-->
-<!--item_transaction end-->
+<!--login_activity start-->
+<string name="login_activity_email">Email</string>
+<string name="login_activity_password">Password</string>
+<!--login_activity end-->
 
-<!--layout_search start-->
-<!--layout_search end-->
+<!--my_profile_activity start-->
+<!--my_profile_activity end-->
 
-<!--layout_transaction_summary start-->
-<string name="transaction_summary_layout_total_earning">Total Earning</string>
-<string name="transaction_summary_layout_">:</string>
-<string name="transaction_summary_layout_">-</string>
-<string name="transaction_summary_layout_current_balance">Current Balance</string>
-<string name="transaction_summary_layout_">:</string>
-<string name="transaction_summary_layout_">-</string>
-<string name="transaction_summary_layout_last_withdrawal">Last Withdrawal</string>
-<string name="transaction_summary_layout_">:</string>
-<string name="transaction_summary_layout_">-</string>
-<!--layout_transaction_summary end-->
+<!--setting_account_information_activity start-->
+<!--setting_account_information_activity end-->
 
-<!--view_form start-->
-<!--view_form end-->
+<!--setting_general_activity start-->
+<!--setting_general_activity end-->
+
+<!--sign_up_activity start-->
+<string name="sign_up_activity_qwertyuiopasdfghjklzxcvbnm_qwertyuiopasdfghjklzxcvbnm">QWERTYUIOPASDFGHJKLZXCVBNM qwertyuiopasdfghjklzxcvbnm,.'</string>
+<string name="sign_up_activity_name">Name</string>
+<string name="sign_up_activity_email">Email</string>
+<string name="sign_up_activity_password">Password</string>
+<string name="sign_up_activity_consultant_id">Consultant ID</string>
+<string name="sign_up_activity_phone_number">Phone Number</string>
+<!--sign_up_activity end-->
+
+<!--splash_activity start-->
+<!--splash_activity end-->
+
+<!--transaction_activity start-->
+<!--transaction_activity end-->
+
+<!--verification_account_activity start-->
+<string name="verification_account_activity_verification_code">Verification Code</string>
+<!--verification_account_activity end-->
+
+<!--waiting_approval_activity start-->
+<string name="waiting_approval_activity_waiting_approval">Waiting Approval</string>
+<string name="waiting_approval_activity_your_profile_being_our_review_once_your_profile_is_complete_our_review_well_send_notifications_to_your_cell_phone_and_your_email_a_review_will_take_13_working_days_so_please_be_patient_thank_you">Your profile being our review. Once your profile is complete our review, we'll send notifications to your cell phone and your email. A review will take 1-3 working days, so please be patient. Thank you.</string>
+<string name="waiting_approval_activity_login_with_different_account">Login with different account</string>
+<!--waiting_approval_activity end-->
+
+<!--call_summary_dialog start-->
+<!--call_summary_dialog end-->
+
+<!--edit_password_dialog start-->
+<string name="edit_password_dialog_input_old_password">Input Old Password</string>
+<string name="edit_password_dialog_input_new_password">Input New Password</string>
+<!--edit_password_dialog end-->
+
+<!--report_transaction_dialog start-->
+<string name="report_transaction_dialog_briefly_explain_what_happened">Briefly explain what happened</string>
+<!--report_transaction_dialog end-->
+
+<!--simple_dialog start-->
+<!--simple_dialog end-->
+
+<!--callback_fragment start-->
+<!--callback_fragment end-->
+
+<!--consulation_missed_fragment start-->
+<string name="consulation_missed_fragment_empty_missed_consultation">Empty Missed Consultation</string>
+<string name="consulation_missed_fragment_you_dont_have_any_missed_consultation">You don't have any missed consultation</string>
+<!--consulation_missed_fragment end-->
+
+<!--consulation_recent_fragment start-->
+<string name="consulation_recent_fragment_empty_recent_consultation">Empty Recent Consultation</string>
+<string name="consulation_recent_fragment_you_dont_have_any_recent_consultation">You don't have any recent consultation</string>
+<!--consulation_recent_fragment end-->
+
+<!--consultation_fragment start-->
+<!--consultation_fragment end-->
+
+<!--evaluate_call_fragment start-->
+<!--evaluate_call_fragment end-->
+
+<!--home_fragment start-->
+<!--home_fragment end-->
+
+<!--setting_fragment start-->
+<!--setting_fragment end-->
+
+<!--video_call_fragment start-->
+<!--video_call_fragment end-->
+
+<!--video_calling_fragment start-->
+<!--video_calling_fragment end-->
+
+<!--voice_call_fragment start-->
+<!--voice_call_fragment end-->
+
+<!--voice_calling_fragment start-->
+<!--voice_calling_fragment end-->
+
+<!--chat_file_item start-->
+<!--chat_file_item end-->
+
+<!--chat_file_me_item start-->
+<!--chat_file_me_item end-->
+
+<!--chat_img_item start-->
+<!--chat_img_item end-->
+
+<!--chat_img_me_item start-->
+<!--chat_img_me_item end-->
+
+<!--chat_media_item start-->
+<!--chat_media_item end-->
+
+<!--chat_text_item start-->
+<!--chat_text_item end-->
+
+<!--chat_text_me_item start-->
+<!--chat_text_me_item end-->
+
+<!--consultation_log_item start-->
+<!--consultation_log_item end-->
+
+<!--location_item start-->
+<!--location_item end-->
+
+<!--specialty_item start-->
+<!--specialty_item end-->
+
+<!--transaction_item start-->
+<!--transaction_item end-->
+
+<!--search_layout start-->
+<string name="search_layout_search">Search...</string>
+<!--search_layout end-->
+
+<!--transaction_summary_layout start-->
+<!--transaction_summary_layout end-->
+
+<!--form_view start-->
+<!--form_view end-->
 

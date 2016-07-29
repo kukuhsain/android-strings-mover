@@ -26,6 +26,10 @@ def list_realstrings_to_file(line, filter_result, filename_result):
     else:
         return False
 
+def snakecase_to_camelcase(snake_str):
+    components = snake_str.split('_')
+    return "".join(x.title() for x in components)
+
 temp_file = []
 for root, dirs, files in os.walk(PATH):
     for single_file in sorted(files):
@@ -38,8 +42,10 @@ for root, dirs, files in os.walk(PATH):
             tag = file_name.split('_', 1)[0]
             filtered_file_name = file_name.split('_', 1)[1]
             filename_result = filtered_file_name + '_' + tag
+
+            filename_camelcase = snakecase_to_camelcase(filename_result)
             
-            starting_mark = "<!--"+filename_result+" start-->\n"
+            starting_mark = "<!--"+filename_camelcase+" start-->\n"
             temp_file.append(starting_mark)
 
             with open(fullpath, 'r') as f:
@@ -68,7 +74,7 @@ for root, dirs, files in os.walk(PATH):
                         if final_result:
                             temp_file.append(final_result)
 
-            ending_mark = "<!--"+filename_result+" end-->\n"
+            ending_mark = "<!--"+filename_camelcase+" end-->\n"
             temp_file.append(ending_mark)
 
             new_line = "\n"

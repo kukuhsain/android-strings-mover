@@ -25,8 +25,8 @@ with open(full_strings_path, 'r') as f:
             
             result[key] = value
             
-for key in result:
-    print result[key]
+# for key in result:
+    # print result[key]
 
 # temp_file = []
 # with open('activity_chat.xml', 'r') as f:
@@ -54,32 +54,35 @@ for root, dirs, files in os.walk(full_java_ui_path):
     for single_file in sorted(files):
         fullpath = os.path.join(root, single_file)
         # print(fullpath)
-        file_name = single_file.replace('.xml', '')
+        # file_name = single_file.replace('.xml', '')
         # print("<!--"+file_name+" start-->")
 
         temp_file = []
         with open(fullpath, 'r') as f:
             for line in f.readlines():
                 if 'R.string' in line:
-                    filter_result = re.findall('R.string.(.*)\)', line)[0]
-                    filter_result = filter_result.replace(')', '')
-                    print(filter_result)
+                    filter_results = re.findall('R.string.(.*?)\)', line)
+                    # filter_result = filter_result.replace(')', '')
+                    for filter_result in filter_results:
+                        print(filter_result)
+                        print(fullpath)
 
-                    key = filter_result
-                    filter_result_added = 'R.string.' + filter_result
-                    try:
-                        after_converted = '"' + result[key] + '"'
-                        
-                        if "getString" in line:
-                            filter_result_added = "getString(" + filter_result_added + ")"
-                            line = line.replace(filter_result_added, after_converted)
-                        else:
-                            line = line.replace(filter_result_added, after_converted)
+                        key = filter_result
+                        filter_result_added = 'R.string.' + filter_result
+                        try:
+                            after_converted = '"' + result[key] + '"'
+                            
+                            if "getString" in line:
+                                filter_result_added = "getString(" + filter_result_added + ")"
+                                line = line.replace(filter_result_added, after_converted)
+                            else:
+                                line = line.replace(filter_result_added, after_converted)
 
-                        print(after_converted)
-                        print(line)
-                    except KeyError:
-                        print('Key not found')
+                            # print(after_converted)
+                            # print(line)
+                        except KeyError:
+                            # print('Key not found')
+                            pass
                 temp_file.append(line)
         
         with open(fullpath, 'w+') as f:

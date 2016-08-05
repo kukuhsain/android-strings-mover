@@ -70,20 +70,21 @@ for root, dirs, files in os.walk(full_java_ui_path):
             with open(fullpath, 'r') as f:
                 for line in f.readlines():
                     if '"' in line:
-                        filter_result = re.findall('"(.*)"', line)[0]
+                        filter_results = re.findall('"(.*?)"', line)
                         # filter_result = filter_result.replace('', '')
                         # if filter_result in result[file_name]:
                             # print True
 
-                        for key, value in result[file_name].iteritems():
-                            # print key
-                            # print value
-                            if value in line:
-                                string_before = '"' + value + '"'
-                                string_after = 'AndroidUtilities.getString(R.string.' + key + ')'
-                                line = line.replace(string_before, string_after)
+                        for filter_result in filter_results:
+                            for key, value in result[file_name].iteritems():
+                                # print key
+                                # print value
+                                if value in line:
+                                    string_before = '"' + value + '"'
+                                    string_after = 'AndroidUtilities.getString(R.string.' + key + ')'
+                                    line = line.replace(string_before, string_after)
 
-                        print line
+                            print line
 
                     temp_file.append(line)
 

@@ -1,4 +1,5 @@
 # ignore this file(s)
 settings.py
+settings.pyc
 result-strings-xml.xml
 result-strings-java.xml

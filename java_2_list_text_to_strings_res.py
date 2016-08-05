@@ -39,17 +39,19 @@ for root, dirs, files in os.walk(PATH):
                     # prefixes_removed = whitespaces_removed.replace('android:text="', "")
                     # suffixes_removed = prefixes_removed.replace('"\n', "")
 
-                    filter_result = re.findall('"(.*)"', line)[0]
-                    # file_name_in_xml = file_name.rsplit('.', 1)[1]
-                    # file_name_in_xml = convert(file_name_in_xml)
+                    filter_results = re.findall('"(.*?)"', line)
 
-                    file_name_in_xml = convert(file_name)
+                    for filter_result in filter_results:
+                        # file_name_in_xml = file_name.rsplit('.', 1)[1]
+                        # file_name_in_xml = convert(file_name_in_xml)
 
-                    prefix = '<string name="' + file_name_in_xml + '_' + strip_punctuation(filter_result.lower()).replace(' ', '_') + '">'
-                    suffix = '</string>\n'
-                    
-                    final_result = prefix + filter_result + suffix
-                    temp_file.append(final_result)
+                        file_name_in_xml = convert(file_name)
+
+                        prefix = '<string name="' + file_name_in_xml + '_' + strip_punctuation(filter_result.lower()).replace(' ', '_') + '">'
+                        suffix = '</string>\n'
+                        
+                        final_result = prefix + filter_result + suffix
+                        temp_file.append(final_result)
         ending_mark = "<!--"+file_name+" end-->\n"
         temp_file.append(ending_mark)
 

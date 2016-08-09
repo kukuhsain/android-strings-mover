@@ -65,32 +65,35 @@ for root, dirs, files in os.walk(full_java_ui_path):
         file_name = single_file.replace('.java', '')
         # print result[file_name]
 
-        if result[file_name]:
-            temp_file = []
-            with open(fullpath, 'r') as f:
-                for line in f.readlines():
-                    if '"' in line:
-                        filter_results = re.findall('"(.*?)"', line)
-                        # filter_result = filter_result.replace('', '')
-                        # if filter_result in result[file_name]:
-                            # print True
+        try:
+            if result[file_name]:
+                temp_file = []
+                with open(fullpath, 'r') as f:
+                    for line in f.readlines():
+                        if '"' in line:
+                            filter_results = re.findall('"(.*?)"', line)
+                            # filter_result = filter_result.replace('', '')
+                            # if filter_result in result[file_name]:
+                                # print True
 
-                        for filter_result in filter_results:
-                            for key, value in result[file_name].iteritems():
-                                # print key
-                                # print value
-                                if value in line:
-                                    string_before = '"' + value + '"'
-                                    string_after = 'AndroidUtilities.getString(R.string.' + key + ')'
-                                    line = line.replace(string_before, string_after)
+                            for filter_result in filter_results:
+                                for key, value in result[file_name].iteritems():
+                                    # print key
+                                    # print value
+                                    if value in line:
+                                        string_before = '"' + value + '"'
+                                        string_after = 'AndroidUtilities.getString(R.string.' + key + ')'
+                                        line = line.replace(string_before, string_after)
 
-                            print line
+                                print line
 
-                    temp_file.append(line)
+                        temp_file.append(line)
 
-            with open(fullpath, 'w+') as f:
-                for line in temp_file:
-                    f.writelines(line)
+                with open(fullpath, 'w+') as f:
+                    for line in temp_file:
+                        f.writelines(line)
 
-        else:          
-            print False
+            else:          
+                print False
+        except KeyError:
+            print('Key not found')

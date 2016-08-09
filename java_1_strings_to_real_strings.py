@@ -14,7 +14,7 @@ full_strings_path = ROOT_PATH + RES_PATH + STRINGS_PATH
 result = {}
 with open(full_strings_path, 'r') as f:
     for line in f.readlines():
-        if "string" in line:
+        if "string" in line and "<!--" not in line:
             key = re.findall('name="(.*)"', line)[0]
             if "formatted" in key:
                 key = re.findall('(.*)" ', key)[0]
